@@ -1,0 +1,21 @@
+.coloumn_direction {
+  flex-direction: column !important;
+  list-style: none;
+}
+
+.navs {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+
+  li {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
