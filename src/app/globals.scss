@@ -17,4 +17,38 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1600px) {
+  html {
+    font-size: 60%;
+  }
+}
 
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  html {
+    font-size: 45%;
+  }
+}

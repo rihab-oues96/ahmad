@@ -8,7 +8,11 @@ const Service = () => {
     <section className={styles.section_service}>
       {serviceCards.map((card: any, index: number) => (
         <div key={index} className={styles.service_card}>
-          <Image src={card.icon} alt="card icon" />
+          <Image
+            src={card.icon}
+            alt="card icon"
+            className={styles.service_icon}
+          />
 
           <div className={styles.typography}>
             <p className={styles.card_title}>{card.title}</p>
