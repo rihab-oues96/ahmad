@@ -1,0 +1,54 @@
+@import "../../assets/scss/variables.scss";
+
+.new_collection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $light_cream1;
+  padding-left: 4rem;
+  width: 64.3rem;
+  height: 44.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 14rem;
+  right: 6rem;
+
+  .new {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: 3px;
+    color: $dark_gray_color;
+  }
+
+  .new_collection_title {
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.5rem;
+    color: $primary_color;
+  }
+
+  .new_collection_description {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    color: $dark_gray_color;
+  }
+
+  .buy_now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22.2rem;
+    height: 7.4rem;
+    background-color: $primary_color;
+    margin-top: 4rem;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      color: $white_color;
+    }
+  }
+}

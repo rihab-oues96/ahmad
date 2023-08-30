@@ -1,0 +1,9 @@
+.section_cover {
+  width: 100%;
+  height: calc(100vh - 10rem);
+  background-image: url(../../assets/images/background_cover.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
