@@ -1,6 +1,9 @@
 import React from "react";
 import Article from "../Article";
 import styles from "./articleGroup.module.scss";
+import Dining from "../../assets/images/dining.svg";
+import Living from "../../assets/images/living.svg";
+import Bedroom from "../../assets/images/bedroom.svg";
 
 function ArticleGroupe() {
   return (
@@ -10,9 +13,9 @@ function ArticleGroupe() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </p>
       <div className={styles.articles}>
-        <Article />
-        <Article />
-        <Article />
+        <Article image={Dining} title="Dining" />
+        <Article image={Living} title="Living" />
+        <Article image={Bedroom} title="Bedroom" />
       </div>
     </section>
   );

@@ -1,16 +1,16 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import styles from "./product.module.scss";
 import Image from "next/image";
-import styles from "./article.module.scss";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
-interface ArticleProps {
+interface ProductProps {
   title: string;
   image: string | StaticImport;
 }
 
-function Article({ title, image }: ArticleProps) {
+function Product({ title, image }: ProductProps) {
   return (
-    <figure className={styles.figure}>
+    <div className={styles.productContainer}>
       <Image
         src={image}
         alt="Article Image"
@@ -19,9 +19,8 @@ function Article({ title, image }: ArticleProps) {
         objectFit="cover"
         className={styles.image}
       />
-      <h3 className={styles.typographie}>{title}</h3>
-    </figure>
+    </div>
   );
 }
 
-export default Article;
+export default Product;
