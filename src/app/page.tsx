@@ -1,15 +1,11 @@
 import Cover from "@/components/Cover";
-import Footer from "@/layout/Footer";
-
-import Service from "@/layout/Service";
+import ArticleGroupe from "@/components/ArticleGroup";
 
 export default function Home() {
   return (
     <main>
-  
       <Cover />
-      <Service />
-      <Footer />
+      <ArticleGroupe />
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import "./globals.scss";
 import Header from "@/layout/Header";
+import Footer from "@/layout/Footer";
 
 export const metadata = {
   title: "Furniro",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
