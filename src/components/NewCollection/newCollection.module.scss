@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: $light_cream1;
-  padding-left: 4rem;
+  padding: 4rem;
   width: 64.3rem;
   height: 44.3rem;
   border-radius: 1rem;
@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     width: 22.2rem;
     height: 7.4rem;
     background-color: $primary_color;
@@ -50,5 +51,41 @@
       line-height: 2.4rem;
       color: $white_color;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .new_collection {
+    position: unset;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .new_collection {
+    width: 80%;
+    gap: 2rem;
+
+    .new_collection_title {
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 5rem;
+    }
+
+    .buy_now {
+      margin: 0;
+      width: 18rem;
+      height: 6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .new_collection {
+    width: 90%;
+    padding: 2rem;
   }
 }

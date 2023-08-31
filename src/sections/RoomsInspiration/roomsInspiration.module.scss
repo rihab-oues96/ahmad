@@ -1,0 +1,129 @@
+@import "../../assets/scss/variables.scss";
+
+.rooms_inspiration {
+  display: flex;
+  align-items: center;
+  background-color: $light_cream2;
+  padding: 4rem 0 4rem 10rem;
+  gap: 10%;
+
+  .rooms_inspiration_left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+
+    .rooms_inspiration_title {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 4.8rem;
+      color: $dark_gray_color1;
+    }
+
+    .rooms_inspiration_description {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      color: $dark_gray_color2;
+    }
+
+    .btn_explore_more {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 17.6rem;
+      height: 4.8rem;
+      background-color: $primary_color;
+      cursor: pointer;
+
+      p {
+        color: $white_color;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+      }
+    }
+  }
+
+  .rooms_inspiration_right {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    gap: 2rem;
+
+    .current_image {
+      // width: 40.4rem;
+      width: 40%;
+      height: 58.2rem;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .current_image_info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        gap: 1rem;
+        left: 2rem;
+        bottom: 2rem;
+        width: 21.7rem;
+        height: 13rem;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.72);
+
+        span {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+          color: $dark_gray_color2;
+        }
+
+        p {
+          font-size: 2.8rem;
+          font-weight: 600;
+          line-height: 3.3rem;
+          color: $dark_gray_color1;
+        }
+      }
+
+      .next_image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary_color;
+        width: 4.8rem;
+        height: 4.8rem;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: -4.8rem;
+
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .slider_container {
+      overflow: hidden;
+      width: 60%;
+
+      .slider_cards {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .rooms_inspiration {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

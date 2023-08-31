@@ -14,8 +14,6 @@ function Article({ title, image }: ArticleProps) {
       <Image
         src={image}
         alt="Article Image"
-        width={782.125}
-        height={521}
         objectFit="cover"
         className={styles.image}
       />

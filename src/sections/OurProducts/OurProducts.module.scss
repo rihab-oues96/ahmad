@@ -1,0 +1,43 @@
+@import "../../assets/scss/variables.scss";
+
+.OurProducts_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem 6rem;
+  gap: 4rem;
+
+  .OurProducts_section_title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    color: $dark_gray_color1;
+  }
+
+  .products_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .Show_More_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.5rem;
+    height: 4.8rem;
+    border: 1px solid $primary_color;
+    margin-bottom: 2rem;
+    cursor: pointer;
+
+    p {
+      color: $primary_color;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+    }
+  }
+}

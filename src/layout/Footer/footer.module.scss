@@ -113,3 +113,11 @@
     }
   }
 }
+
+@media screen and (max-width: 428px) {
+  .footer {
+    .footer_top {
+      flex-direction: column;
+    }
+  }
+}

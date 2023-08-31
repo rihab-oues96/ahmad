@@ -1,6 +1,7 @@
+import { serviceCards } from "@/data";
 import Image from "next/image";
 import React from "react";
-import { serviceCards } from "../../../data";
+
 import styles from "./service.module.scss";
 
 const Service = () => {

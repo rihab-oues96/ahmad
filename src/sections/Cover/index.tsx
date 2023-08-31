@@ -1,5 +1,5 @@
 import React from "react";
-import NewCollection from "../NewCollection";
+import NewCollection from "../../components/NewCollection";
 import styles from "./cover.module.scss";
 
 const Cover = () => {
