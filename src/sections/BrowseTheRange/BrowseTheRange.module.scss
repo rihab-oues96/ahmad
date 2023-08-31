@@ -1,0 +1,31 @@
+.section_Container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem;
+
+  .section_Title,
+  .section_Typographie {
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    line-height: normal;
+    margin: 0.5rem 0 5rem 0;
+  }
+
+  .section_Title {
+    color: var(--font-color, #333);
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+
+  .section_Typographie {
+    color: var(--font-color-1, #666);
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .section_ArticlesGroupe {
+    display: flex;
+    justify-content: space-between;
+  }
+}

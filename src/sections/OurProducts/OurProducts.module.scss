@@ -1,6 +1,6 @@
 @import "../../assets/scss/variables.scss";
 
-.OurProducts_section {
+.section_OurProducts {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   margin: 4rem 6rem;
   gap: 4rem;
 
-  .OurProducts_section_title {
+  .section_OurProducts_title {
     font-size: 4rem;
     line-height: 4.8rem;
     font-weight: 700;

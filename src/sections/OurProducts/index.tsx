@@ -4,8 +4,8 @@ import styles from "./OurProducts.module.scss";
 
 const OurProducts = () => {
   return (
-    <section className={styles.OurProducts_section}>
-      <p className={styles.OurProducts_section_title}> Our Products</p>
+    <section className={styles.section_OurProducts}>
+      <p className={styles.section_OurProducts_title}> Our Products</p>
 
       <div className={styles.products_container}>
         {productsCardData.map((product: any, index: number) => {
