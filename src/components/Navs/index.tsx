@@ -1,19 +1,17 @@
-import React from "react";
+import { navsList } from "@/data";
+import Link from "next/link";
 import styles from "./navs.module.scss";
 
-type navsType = {
-  component?: string;
-};
-
-const Navs = (component: navsType) => {
-  console.log(component);
-
+const Navs = () => {
   return (
-    <ul className={`${styles.navs} `}>
-      <li>Home</li>
-      <li>Shop</li>
-      <li>About</li>
-      <li>Contact</li>
+    <ul className={`${styles.navs}`}>
+      {navsList.map((nav, index) => {
+        return (
+          <li key={index}>
+            <Link href={nav.route!}>{nav.name}</Link>
+          </li>
+        );
+      })}
     </ul>
   );
 };

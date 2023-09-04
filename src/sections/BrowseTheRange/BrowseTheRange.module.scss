@@ -1,31 +1,41 @@
+@import "../../assets/scss/variables.scss";
+
 .section_Container {
   display: flex;
   flex-direction: column;
-  margin: 0 10rem;
+  margin: 4rem 10rem;
 
-  .section_Title,
-  .section_Typographie {
-    text-align: center;
-    font-family: Poppins;
-    font-style: normal;
-    line-height: normal;
-    margin: 0.5rem 0 5rem 0;
-  }
-
-  .section_Title {
-    color: var(--font-color, #333);
-    font-size: 3.2rem;
-    font-weight: 700;
-  }
-
-  .section_Typographie {
-    color: var(--font-color-1, #666);
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .section_ArticlesGroupe {
+  .typography {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .title {
+      color: $dark_gray_color;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    .description {
+      color: $dark_gray_color3;
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  .articlesGroupe {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .section_Container {
+    margin: 4rem;
   }
 }

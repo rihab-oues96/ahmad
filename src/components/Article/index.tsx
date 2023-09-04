@@ -11,13 +11,8 @@ interface ArticleProps {
 function Article({ title, image }: ArticleProps) {
   return (
     <figure className={styles.figure}>
-      <Image
-        src={image}
-        alt="Article Image"
-        objectFit="cover"
-        className={styles.image}
-      />
-      <h3 className={styles.typographie}>{title}</h3>
+      <Image src={image} alt="Article Image" className={styles.image} />
+      <h3 className={styles.typography}>{title}</h3>
     </figure>
   );
 }

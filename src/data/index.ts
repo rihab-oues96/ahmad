@@ -11,6 +11,23 @@ import product5 from "../assets/images/product5.jpeg";
 import product6 from "../assets/images/product6.jpeg";
 import product7 from "../assets/images/product7.jpeg";
 
+import fur1 from "../assets/images/fur1.jpeg";
+import fur2 from "../assets/images/fur2.jpeg";
+import fur3 from "../assets/images/fur3.jpeg";
+import fur4 from "../assets/images/fur4.jpeg";
+import fur6 from "../assets/images/fur6.jpeg";
+import fur5 from "../assets/images/fur5.jpeg";
+import fur7 from "../assets/images/fur7.jpeg";
+import fur9 from "../assets/images/fur9.jpeg";
+import fur8 from "../assets/images/fur8.jpeg";
+
+export const navsList = [
+  { name: "Home", route: "/" },
+  { name: "Shop", route: "Shop" },
+  { name: "About", route: "Blog" },
+  { name: "Contact", route: "Contact" },
+];
+
 export const serviceCards = [
   {
     icon: cup,
@@ -105,4 +122,16 @@ export const productsCardData = [
     new: false,
     reduction: "30%",
   },
+];
+
+export const fursImages = [
+  fur1,
+  fur2,
+  fur3,
+  fur4,
+  fur5,
+  fur6,
+  fur7,
+  fur8,
+  fur9,
 ];

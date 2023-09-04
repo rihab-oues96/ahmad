@@ -9,6 +9,13 @@ import shopping_icon from "../../assets/icons/shopping.svg";
 import Navs from "@/components/Navs";
 import menu from "../../assets/icons/menu.png";
 
+const iconsNavs = [
+  { icon: user_icon },
+  { icon: search_icon },
+  { icon: heart_icon },
+  { icon: shopping_icon },
+];
+
 const Header = () => {
   return (
     <header className={styles.header}>
@@ -20,18 +27,13 @@ const Header = () => {
         <Navs />
 
         <ul className={styles.icon_navs}>
-          <li>
-            <Image src={user_icon} alt="icon user" />
-          </li>
-          <li>
-            <Image src={search_icon} alt="icon loop" />
-          </li>
-          <li>
-            <Image src={heart_icon} alt="icon heart" />
-          </li>
-          <li>
-            <Image src={shopping_icon} alt="icon shop" />
-          </li>
+          {iconsNavs.map((icon, index) => {
+            return (
+              <li key={index}>
+                <Image src={icon.icon} alt="icon" />
+              </li>
+            );
+          })}
         </ul>
       </div>
 

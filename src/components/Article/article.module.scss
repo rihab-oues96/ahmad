@@ -1,21 +1,28 @@
+@import "../../assets/scss/variables.scss";
+
 .figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  width: calc(33.33% - 2rem);
+  width: 38.1rem;
+
+  .image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+  }
+
+  .typography {
+    color: $dark_gray_color;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
 }
 
-.typographie {
-  color: var(--font-color, #333);
-  text-align: center;
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
-.image {
-  width: fit-content;
-  border-radius: 2rem;
+@media screen and (max-width: 428px) {
+  .figure {
+    width: 100%;
+  }
 }
