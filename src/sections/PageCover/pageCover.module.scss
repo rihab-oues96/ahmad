@@ -1,0 +1,11 @@
+@import "../../assets/scss/variables.scss";
+
+.page_cover {
+  background-image: url("../../assets/images/p_cover.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

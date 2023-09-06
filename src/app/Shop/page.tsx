@@ -1,7 +1,14 @@
+import Service from "@/layout/Service";
+import PageCover from "@/sections/PageCover";
 import React from "react";
 
 const Shop = () => {
-  return <div>shop page</div>;
+  return (
+    <div>
+      <PageCover pageName="Shop" />
+      <Service />
+    </div>
+  );
 };
 
 export default Shop;
