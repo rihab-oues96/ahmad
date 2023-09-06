@@ -1,13 +1,15 @@
 import Service from "@/layout/Service";
 import PageCover from "@/sections/PageCover";
 import ShopFilter from "@/components/ShopFilter";
+import OurProducts from "@/sections/OurProducts";
 
 const Shop = () => {
   return (
     <main>
       <PageCover pageName="Shop" />
       <ShopFilter />
-      {/* <Service /> */}
+      <OurProducts />
+      <Service />
     </main>
   );
 };

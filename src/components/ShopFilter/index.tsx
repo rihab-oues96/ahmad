@@ -25,11 +25,11 @@ function ShopFilter() {
       <div className={styles.shopFilter_rightside}>
         <div className={styles.show}>
           <label htmlFor="show">Show</label>
-          <input id="show" type="number" />
+          <input id="show" type="number" placeholder="16" />
         </div>
         <div className={styles.sort}>
           <label htmlFor="sort">Short by</label>
-          <input id="sort" type="text" />
+          <input id="sort" type="text" placeholder="Default" />
         </div>
       </div>
     </div>

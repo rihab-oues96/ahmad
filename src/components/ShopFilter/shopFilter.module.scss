@@ -54,6 +54,32 @@
         font-weight: 400;
         line-height: normal;
       }
+
+      input {
+        height: 5.5rem;
+        color: #9f9f9f;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .show {
+      input {
+        width: 5.5rem;
+        text-align: center;
+        border: none;
+      }
+    }
+
+    .sort {
+      input {
+        width: 18.8rem;
+        border: none;
+        padding: 0 1rem;
+      }
     }
   }
 }
