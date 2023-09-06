@@ -1,6 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./productCard.module.scss";
+import compare from "../../assets/icons/compare.svg";
+import like from "../../assets/icons/like.svg";
+import share from "../../assets/icons/share.svg";
 
 const ProductCard = ({ product, key }: any) => {
   return (
@@ -9,10 +12,17 @@ const ProductCard = ({ product, key }: any) => {
         <div className={styles.btn_add_to_cart}>
           <p>Add to cart</p>
         </div>
+
         <div className={styles.actions}>
-          <p>Share</p>
-          <p>Compare</p>
-          <p>Like</p>
+          <p>
+            <Image src={share} alt="share icon" /> Share
+          </p>
+          <p>
+            <Image src={like} alt="like icon" /> Compare
+          </p>
+          <p>
+            <Image src={compare} alt="compare icon" /> Like
+          </p>
         </div>
       </div>
 
