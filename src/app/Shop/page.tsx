@@ -1,13 +1,14 @@
 import Service from "@/layout/Service";
 import PageCover from "@/sections/PageCover";
-import React from "react";
+import ShopFilter from "@/components/ShopFilter";
 
 const Shop = () => {
   return (
-    <div>
+    <main>
       <PageCover pageName="Shop" />
-      <Service />
-    </div>
+      <ShopFilter />
+      {/* <Service /> */}
+    </main>
   );
 };
 

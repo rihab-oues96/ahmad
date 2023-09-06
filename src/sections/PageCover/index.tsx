@@ -14,7 +14,10 @@ const PageCover = ({ pageName }: PageCovertype) => {
         <Image src={logo} alt="logo" />
         <p className={styles.page_cover_title}>{pageName}</p>
         <p className={styles.Page_cover_subtitle}>
-          Home `{">"}` {pageName}
+          Home {`>`}
+          <span className={styles.Page_cover_subtitle_pagename}>
+            {pageName}
+          </span>
         </p>
       </div>
     </section>

@@ -1,0 +1,59 @@
+.shopFilter {
+  padding: 4rem 8rem 4rem 8rem;
+  background-color: #faf3ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .shopFilter_leftside {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+
+    .shopFilter_filter {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .filter_typographie {
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .shopFilter_result {
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .shopFilter_rightside {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    .show,
+    .sort {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      label {
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+}
